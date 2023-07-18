@@ -1,0 +1,297 @@
+/* Body */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+}
+
+/* Nav Section */
+nav{
+    background-color: white;
+    height: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+}
+.logo-side-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img{
+    max-width: 86px;
+    max-height: 40px;
+    margin-right: 20px;
+}
+.logo-text{
+    font-size: 45px;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+.logo-text span{
+    color: #FF3B94;
+    font-size: 45px;
+}
+.menu-side{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-us,.devlopers, .follow-us-on{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500px;
+    font-family: 'Work Sans', sans-serif;
+    color: #3C354F;
+}
+.follow-btn{
+    width: 250px;
+    height: 56px;
+    background-color: #0B0223;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+}
+.follow-us-on{
+    color: #fff;
+    opacity: 100%;
+}
+.social-icon{
+    color: #F61C0D;
+}
+
+/* Header */
+header{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 100vh;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.header-text-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+}
+
+.play-like-the{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    color: #0B0223;
+    margin: 0;
+}
+.goat{
+    background: linear-gradient(to right, #F948B2, #8758F1);
+    font-size: 60px;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-background-clip: text;
+}
+.optio-div{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.option-icon{
+    width: 24px;
+    height: 24px;
+}
+.option-text{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #363434;
+    margin-left: 10px;
+}
+.button-father{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.sign-in{
+    padding: 15px 30px;
+    background-color: #FF3B94;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+.go-rogue{
+    padding: 15px 30px;
+    background-color: #4EC5F7;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+.gerdien-img{
+    height: 680px;
+}
+
+/* Mobile Screen */
+ @media screen and (max-width:606px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav{
+        height: auto;
+        width: 426px;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo-side-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+    .logo-img{
+        max-width: 86px;
+        max-height: 40px;
+        margin-right: 20px;
+    }
+    .logo-text{
+        font-size: 45px;
+        color: black;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 700;
+    }
+    .logo-text span{
+        color: #FF3B94;
+        font-size: 45px;
+    }
+    .menu-side{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us,.devlopers, .follow-us-on{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500px;
+        font-family: 'Work Sans', sans-serif;
+        color: #3C354F;
+    }
+    .follow-btn{
+        width: 250px;
+        height: 56px;
+        background-color: #0B0223;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 20px;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 20px;
+    }
+    .follow-us-on{
+        color: #fff;
+        opacity: 100%;
+    }
+    .social-icon{
+        color: #F61C0D;
+    }
+
+    /* header */
+    header{
+        height: auto;
+    }
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .gerdien-img{
+        width: 100%;
+        height: 90%;
+    }
+    .header-image-side{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .header-text-side{
+        padding-top: 30px;
+        margin: 0 auto;
+        width: auto;
+    }
+    .play-like-the{
+        font-size: 20px;
+    }
+    .goat{
+        font-size: 22px;
+    }
+    .option-text{
+        font-size: 16px;
+    }
+    .sign-in{
+        padding: 10px 20px;
+        background-color: #FF3B94;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        border-radius: 20px;
+
+    }
+    .button-father{
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: 100%;
+    }
+    .go-rogue{
+        padding: 10px 20px;
+        background-color: #4EC5F7;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        border-radius: 20px;
+    }
+} 
+
