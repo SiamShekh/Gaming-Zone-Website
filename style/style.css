@@ -254,6 +254,75 @@ header{
     text-align: right;
 
 }
+/* Online Game Section */
+.online-game{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.game-online-main{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+
+}
+.title-online-game{
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title-online-game span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title-online-game-info{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.online-main-game{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.game-online{
+    margin: 10px;
+}
+.game-poster:hover{
+    border-radius: 16px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+}
+.game-poster{
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0;
+}
+.game-info{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+}
+
 /*. Mobile Screen */
  @media screen and (max-width:606px) {
 
@@ -408,5 +477,18 @@ header{
         padding: 0;
         text-align: center;
         font-size: 25px;
+    }
+    /* Online Game Section */
+    .online-game{
+        margin-top: 50px;
+    }
+    .title-online-game, .title-online-game span{
+        font-size: 25px;
+    }
+    .online-main-game{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
  }
