@@ -13,7 +13,9 @@ nav{
     height: 100px;
     padding-left: 5vw;
     padding-right: 5vw;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -48,7 +50,7 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-.about-us,.devlopers, .follow-us-on{
+.about-us,.devlopers{
     margin-left: 20px;
     margin-right: 20px;
     font-size: 18px;
@@ -59,8 +61,8 @@ nav{
 .follow-btn{
     width: 250px;
     height: 56px;
-    background-color: #0B0223;
-    border-radius: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
     display: flex;
     margin-left: 20px;
     justify-content: space-around;
@@ -68,8 +70,13 @@ nav{
     padding-right: 20px;
 }
 .follow-us-on{
-    color: #fff;
-    opacity: 100%;
+    color: #3C354F;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .social-icon{
     color: #F61C0D;
@@ -85,10 +92,11 @@ header{
 .header{
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    max-width: 1440px;
+
 }
 
 .header-text-side{
@@ -160,7 +168,92 @@ header{
 .gerdien-img{
     height: 680px;
 }
+/* We are Gamer Section */
+.gamer{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.gamer-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
 
+}
+.gamer-img-side{
+    flex: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.gamer-text-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.gamer-title{
+    background: linear-gradient(to right, #F948B2, #8758F1);
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    -webkit-background-clip: text;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.gamer-description{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.gamer-btn{
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.gamer-context{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px; /* 187.5% */
+    margin-top: 12px;
+    margin-bottom: 12px;   
+}
+.gamer-context-info{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: right;
+
+}
 /* Mobile Screen */
  @media screen and (max-width:606px) {
 
@@ -175,8 +268,8 @@ header{
     nav{
         height: auto;
         width: 426px;
-        padding: 0 20px;
-        margin-top: 20px;
+        padding: 20px;
+
     }
 
     .nav{
@@ -293,5 +386,27 @@ header{
         color: white;
         border-radius: 20px;
     }
-} 
-
+    /* Gamer Section */
+    .gamer-section{
+        flex-direction: column;
+    }
+    .gamer-batch-img{
+        width: 95%;
+    }
+    .gamer-text-side{
+        align-items: center;
+    }
+    .gamer-description{
+        text-align: center;
+    }
+    .gamer-context{
+        margin: 0;
+        padding: 0;
+    }
+    .gamer-context-info{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+ }
