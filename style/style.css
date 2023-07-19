@@ -445,6 +445,46 @@ header{
     border-radius: 48px;
 
 }
+/* Catagorie itam Section */
+.catagorie-headmaster{
+    padding-bottom: 30px;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.catagorie-itam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: fit-content;
+    padding: 5px;
+}
+.catagorie-itam:hover{
+    border-radius: 35px;
+    color: #F948B2;
+    border: #F948B2 1px solid;
+}
+.cat-name{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 10px;
+}
+.cat-name:hover {
+    color: #F948B2;
+}
+
+
 /*. Mobile Screen */
  @media screen and (max-width:426px) {
 
@@ -681,5 +721,21 @@ header{
         display: flex;
         text-align: center;
     }
-   
+    /* Catagorie Section */
+    .catagorie-headmaster{
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 50px;
+    }
+    .cat-name{
+        font-size: 15px;
+    }
+    .cat-logo{
+        width: 24px;
+        height: 24px;
+    }
+    .catagorie-itam{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
  }
