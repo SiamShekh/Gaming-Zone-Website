@@ -741,7 +741,7 @@ li{
         margin-bottom: 50px;
     }
     .play-img-side{
-        width: 300px;
+        max-width: 300px;
         height: 350px;
         flex: none;
         margin: 0;
@@ -750,7 +750,7 @@ li{
         background-size: cover;
     }
     .img-play-instant-small{
-        width: 150px;
+        max-width: 150px;
         height: 200px;
         flex-shrink: 0;
         padding-top: 245px;
@@ -778,12 +778,12 @@ li{
     }
     .Careers-image-side{
         fill: rgba(255, 255, 255, 0.10);
-        width: 425px;
+        max-width: 425px;
         padding: 25px;
         
     }
     .baby-careers{
-        width: 425px;
+        max-width: 425px;
         display: flex;
         align-items: center;
         justify-content: center;
