@@ -10,7 +10,7 @@ body{
 /* Nav Section */
 nav{
     background-color: white;
-    height: 100px;
+    max-height: 100px;
     padding-left: 5vw;
     padding-right: 5vw;
     margin: 0;
@@ -22,8 +22,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     max-width: 1440px;
 }
 .logo-side-div{
@@ -60,8 +60,8 @@ nav{
     color: #3C354F;
 }
 .follow-btn{
-    width: 250px;
-    height: 56px;
+    max-width: 250px;
+    max-height: 56px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     display: flex;
@@ -87,14 +87,18 @@ nav{
 header{
     padding-left: 5vw;
     padding-right: 5vw;
+<<<<<<< HEAD
+=======
+    max-height: 100vh;
+>>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
 
 }
 .header{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     max-width: 1440px;
 
 }
@@ -129,8 +133,8 @@ header{
 
 }
 .option-icon{
-    width: 24px;
-    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
 }
 .option-text{
     font-size: 20px;
@@ -166,7 +170,7 @@ header{
     border-radius: 30px;
 }
 .gerdien-img{
-    height: 680px;
+    max-height: 680px;
 }
 /* We are Gamer Section */
 .gamer{
@@ -179,8 +183,8 @@ header{
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     max-width: 1440px;
 
 }
@@ -265,8 +269,8 @@ header{
 }
 .game-online-main{
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     max-width: 1440px;
 
 }
@@ -333,7 +337,7 @@ header{
     display: flex;
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     max-width: 1440px;
 }  
 .play-text-side{
@@ -349,8 +353,8 @@ header{
     height: fit-content;
 }
 .img-play-instant-small{
-    width: 318.5px;
-    height: 365.083px;
+    max-width: 318.5px;
+    max-height: 365.083px;
     flex-shrink: 0;
     margin-top: 455px;
     margin-right: 470px;
@@ -587,7 +591,7 @@ li{
 
     nav{
         height: auto;
-        width: 426px;
+        max-width: 426px;
         padding: 20px;
 
     }
@@ -633,7 +637,7 @@ li{
         color: #3C354F;
     }
     .follow-btn{
-        width: 250px;
+        max-width: 250px;
         height: 56px;
         background-color: #0B0223;
         border-radius: 10px;
@@ -660,8 +664,8 @@ li{
         flex-direction: column-reverse;
     }
     .gerdien-img{
-        width: 100%;
-        height: 90%;
+        max-width: 100%;
+        max-height: 90%;
     }
     .header-image-side{
         display: flex;
@@ -695,7 +699,7 @@ li{
     .button-father{
         margin-left: 0 auto;
         margin-right: 0 auto;
-        width: 100%;
+        max-width: 100%;
     }
     .go-rogue{
         padding: 10px 20px;
@@ -711,7 +715,7 @@ li{
         flex-direction: column;
     }
     .gamer-batch-img{
-        width: 95%;
+        max-width: 95%;
     }
     .gamer-text-side{
         align-items: center;
@@ -764,8 +768,13 @@ li{
         margin-bottom: 50px;
     }
     .play-img-side{
+<<<<<<< HEAD
         max-width: 200px;
         max-height: 250px;
+=======
+        max-width: 300px;
+        max-height: 350px;
+>>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
         flex: none;
         margin: 0;
         background-repeat: no-repeat;
@@ -773,8 +782,13 @@ li{
         background-size: cover;
     }
     .img-play-instant-small{
+<<<<<<< HEAD
         max-width: 50px;
         max-height: 100px;
+=======
+        max-width: 150px;
+        max-height: 200px;
+>>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
         flex-shrink: 0;
         padding-top: 245px;
         padding-left: 200px;
@@ -785,8 +799,12 @@ li{
         align-items: center;
         justify-content: center;
         max-width: 90%;
+<<<<<<< HEAD
     } */
    
+=======
+    }
+>>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
     /* Careers */
     #Careers-head{
         background-color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -804,6 +822,11 @@ li{
     .Careers-image-side{
         fill: rgba(255, 255, 255, 0.10);
         max-width: 425px;
+<<<<<<< HEAD
+=======
+        padding: 25px;
+        
+>>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
     }
     .baby-careers{
         max-width: 425px;
@@ -824,14 +847,15 @@ li{
         font-size: 15px;
     }
     .cat-logo{
-        width: 24px;
-        height: 24px;
+        max-width: 24px;
+        max-height: 24px;
     }
     .catagorie-itam{
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 10px;
     }
+<<<<<<< HEAD
     /* footer */
     ol,.social-logo-footer{
         list-style: none;
@@ -1139,3 +1163,6 @@ li{
         background-color: #000;
     }
  }
+=======
+ }
+>>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
