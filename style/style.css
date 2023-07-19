@@ -10,9 +10,8 @@ body{
 /* Nav Section */
 nav{
     background-color: white;
-    height: 100px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    max-height: 130px;
+    padding: 3vw;    
     margin: 0;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -22,8 +21,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     max-width: 1440px;
 }
 .logo-side-div{
@@ -300,14 +299,17 @@ header{
     line-height: 30px; /* 166.667% */
 }
 .online-main-game{
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    justify-items: center;
+    justify-items: center; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 .game-poster{
     max-width: 250px;
+}
+.game-poster:hover{
+    box-shadow: 0px 0px 40px 0px rgba(227, 5, 5, 0.15);
 }
 .game-online{
     margin: 5px;
@@ -502,13 +504,11 @@ header{
 
 /* Footer Section */
 .footer{
-    background-color: #000;
-    margin-top: 30px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background-color: #000;  
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     align-items: center;
 }
 .logo-side-div{
@@ -576,6 +576,10 @@ li{
 /*. Mobile Screen */
  @media screen and (max-width:426px) {
 
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     body{
         display: flex;
         flex-direction: column;
@@ -586,8 +590,8 @@ li{
     }
 
     nav{
-        height: auto;
-        max-width: 426px;
+        max-height: 426px;
+        width: 100%;
         padding: 20px;
 
     }
@@ -778,13 +782,8 @@ li{
         background-size: cover;
     }
     .img-play-instant-small{
-<<<<<<< HEAD
-        max-width: 50px;
-        max-height: 100px;
-=======
         max-width: 150px;
         max-height: 200px;
->>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
         flex-shrink: 0;
         padding-top: 245px;
         padding-left: 200px;
@@ -795,12 +794,8 @@ li{
         align-items: center;
         justify-content: center;
         max-width: 90%;
-<<<<<<< HEAD
     } */
    
-=======
-    }
->>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
     /* Careers */
     #Careers-head{
         background-color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -818,11 +813,6 @@ li{
     .Careers-image-side{
         fill: rgba(255, 255, 255, 0.10);
         max-width: 425px;
-<<<<<<< HEAD
-=======
-        padding: 25px;
-        
->>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
     }
     .baby-careers{
         max-width: 425px;
@@ -851,7 +841,6 @@ li{
         margin-right: 5px;
         margin-top: 10px;
     }
-<<<<<<< HEAD
     /* footer */
     ol,.social-logo-footer{
         list-style: none;
@@ -885,7 +874,7 @@ li{
     footer{
         background-color: #000;
     }
- }
+}
 
  /*. Tablet Screen */
  @media screen and (max-width:770px) and (min-width:427px) {
@@ -900,7 +889,7 @@ li{
     }
 
     nav{
-        height: auto;
+        max-height: 300px;
         width: 100%;
         padding: 20px;
         margin: 0px;
@@ -1111,7 +1100,7 @@ li{
     }
     /* Catagorie Section */
     .catagorie-headmaster{
-        grid-template-columns: repeat(2,1fr), auto;
+        grid-template-columns: repeat(2,1fr)auto;
     }
     .cat-name{
         font-size: 15px;
@@ -1157,8 +1146,7 @@ li{
     footer{
         width: 100vw;
         background-color: #000;
+            padding-top: 20px;
+            padding-bottom: 20px;
     }
  }
-=======
- }
->>>>>>> 88cd61119a65500054ccebb9cc38509356ceb0e4
