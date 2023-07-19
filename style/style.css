@@ -13,6 +13,7 @@ nav{
     height: 100px;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin: 0;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -86,7 +87,6 @@ nav{
 header{
     padding-left: 5vw;
     padding-right: 5vw;
-    height: 100vh;
 
 }
 .header{
@@ -188,6 +188,9 @@ header{
     flex: 1;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+.gamer-batch-img{
+    max-width: 500px;
 }
 .gamer-text-side{
     flex: 1;
@@ -297,13 +300,18 @@ header{
     line-height: 30px; /* 166.667% */
 }
 .online-main-game{
- 
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+.game-poster{
+    max-width: 250px;
+}
 .game-online{
-    margin: 10px;
-    max-width: 340px;
+    margin: 5px;
+    max-width: 250px;
 }
 .game-info{
     color: #534C64;
@@ -363,7 +371,7 @@ header{
 }
 .play-instantly-info{
     color: #534C64;
-    text-align: center;
+    text-align: right;
     font-family: Work Sans;
     font-size: 18px;
     font-style: normal;
@@ -374,18 +382,26 @@ header{
 /* Careers Section */
 #Careers-head{
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    max-width: 100vw;
+
 }
 .Careers{
     display: flex;
-    justify-content: space-between;
+    max-width: 1440px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 .baby-careers{
+    max-width: 660px;
 }
 .Careers-image-side{
+    flex: 1;
     fill: rgba(255, 255, 255, 0.10);
-    width: 65%;
+    max-width: 660px;
+    display: flex;
 }
 .Careers-text-side{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -488,7 +504,8 @@ header{
 .footer{
     background-color: #000;
     margin-top: 30px;
-    padding: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -720,16 +737,22 @@ li{
         font-size: 25px;
     }
     .online-main-game{
-        margin-left: 10px;
-        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
     .game-info{
         text-align: center;
     }
+    .game-online{
+    }
     /* Play Instantly */
-    .play-instantly{
+    .play-instantly-section{
+        display: none;
+    }
+    /* .play-instantly{
         flex-direction: column;
         justify-content: center;
     }
@@ -741,8 +764,8 @@ li{
         margin-bottom: 50px;
     }
     .play-img-side{
-        width: 300px;
-        height: 350px;
+        max-width: 200px;
+        max-height: 250px;
         flex: none;
         margin: 0;
         background-repeat: no-repeat;
@@ -750,8 +773,8 @@ li{
         background-size: cover;
     }
     .img-play-instant-small{
-        width: 150px;
-        height: 200px;
+        max-width: 50px;
+        max-height: 100px;
         flex-shrink: 0;
         padding-top: 245px;
         padding-left: 200px;
@@ -761,15 +784,17 @@ li{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 90%;
-    }
+        max-width: 90%;
+    } */
+   
     /* Careers */
+    #Careers-head{
+        background-color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+        width: 100%;
+
+    }
     .Careers{
         flex-direction: column;
-    }
-    #Careers-head{
-        margin-top: 100px;
-        padding-left: 30px;
     }
     .p{
         margin-left: 0 auto;
@@ -778,12 +803,10 @@ li{
     }
     .Careers-image-side{
         fill: rgba(255, 255, 255, 0.10);
-        width: 425px;
-        padding: 25px;
-        
+        max-width: 425px;
     }
     .baby-careers{
-        width: 425px;
+        max-width: 425px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -795,7 +818,7 @@ li{
     /* Catagorie Section */
     .catagorie-headmaster{
         grid-template-columns: repeat(2,1fr);
-        padding-left: 50px;
+        
     }
     .cat-name{
         font-size: 15px;
@@ -808,5 +831,311 @@ li{
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 10px;
+    }
+    /* footer */
+    ol,.social-logo-footer{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    li{
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+    .menu-section{
+        display: flex;
+    }
+    .social-logo-footer>img{
+        width: 24px;
+        margin-top: 20px;
+    }
+    .terms-ol{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright{
+        text-align: center;
+    }
+    .footer{
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    footer{
+        background-color: #000;
+    }
+ }
+
+ /*. Tablet Screen */
+ @media screen and (max-width:770px) and (min-width:427px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: 100%;
+    }
+
+    nav{
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo-side-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+    .logo-img{
+        max-width: 86px;
+        max-height: 40px;
+        margin-right: 20px;
+    }
+    .logo-text{
+        font-size: 45px;
+        color: black;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 700;
+    }
+    .logo-text span{
+        color: #FF3B94;
+        font-size: 45px;
+    }
+    .menu-side{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us,.devlopers, .follow-us-on{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500px;
+        font-family: 'Work Sans', sans-serif;
+        color: #3C354F;
+    }
+    .follow-btn{
+        width: 250px;
+        height: 56px;
+        background-color: #0B0223;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 20px;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 20px;
+    }
+    .follow-us-on{
+        color: #fff;
+        opacity: 100%;
+    }
+    .social-icon{
+        color: #F61C0D;
+    }
+
+    /* header */
+    header{
+        height: auto;
+    }
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .gerdien-img{
+        width: 100%;
+        height: 90%;
+    }
+    .header-image-side{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .header-text-side{
+        padding-top: 30px;
+        margin: 0 auto;
+        width: auto;
+    }
+    .play-like-the{
+        font-size: 20px;
+    }
+    .goat{
+        font-size: 22px;
+    }
+    .option-text{
+        font-size: 16px;
+    }
+    .sign-in{
+        padding: 10px 20px;
+        background-color: #FF3B94;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        border-radius: 20px;
+
+    }
+    .button-father{
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: 100%;
+    }
+    .go-rogue{
+        padding: 10px 20px;
+        background-color: #4EC5F7;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        border-radius: 20px;
+    }
+    /* Gamer Section */
+    .gamer-section{
+        flex-direction: column;
+    }
+    .gamer-batch-img{
+        width: 95%;
+    }
+    .gamer-text-side{
+        align-items: center;
+    }
+    .gamer-description{
+        text-align: center;
+    }
+    .gamer-context{
+        margin: 0;
+        padding: 0;
+    }
+    .gamer-context-info{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    /* Online Game Section */
+    .online-game{
+        margin-top: 50px;
+    }
+    .title-online-game, .title-online-game span{
+        font-size: 25px;
+    }
+    .online-main-game{
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game-info{
+        text-align: center;
+    }
+    .game-online{
+    }
+    /* Play Instantly */
+
+    .play-instantly{
+        flex-direction: column;
+    }
+
+    .play-instantly-title,.play-instantly-info{
+        text-align: center;   
+    }
+  
+     /* Careers Section */
+    .Careers{
+        flex-direction: column;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        padding: 20px;
+    }
+    #Careers-head{
+        margin-top: 100px;
+        padding-left: 30px;
+    }
+    p{
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: auto;
+    }
+    .carees-section-div{
+    }
+    .Careers-image-side{
+        fill: rgba(255, 255, 255, 0.10);
+        padding: 25px;
+        
+    }
+    .baby-careers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-see-all-positions{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: auto;
+    }
+    /* Catagorie Section */
+    .catagorie-headmaster{
+        grid-template-columns: repeat(2,1fr), auto;
+    }
+    .cat-name{
+        font-size: 15px;
+    }
+    .cat-logo{
+        width: 24px;
+        height: 24px;
+    }
+    .catagorie-itam{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+    /* footer */
+    ol,.social-logo-footer{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    li{
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+    .menu-section{
+        display: flex;
+    }
+    .social-logo-footer>img{
+        width: 24px;
+        margin-top: 20px;
+    }
+    .terms-ol{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright{
+        text-align: center;
+    }
+    .footer{
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100vw;
+        background-color: #000;
     }
  }
