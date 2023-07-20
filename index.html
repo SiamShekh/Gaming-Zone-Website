@@ -9,6 +9,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+.hover-img {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 250px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hover-img::before,
+.hover-img::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hover-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hover-img figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hover-img:hover::before,
+.hover-img:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover > img {
+  opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
+    </style>
 </head>
 <body>
     <nav>
@@ -38,15 +118,15 @@
                 <p class="goat">G.O.A.T</p>
 
                 <div class="optio-div">
-                    <img src="images/Rectangle 17.png" alt="" class="option-icon">
+                    <img src="images/play-button-color.svg" alt="" class="option-icon">
                     <p class="option-text">1-Click instant play</p>
                 </div>
                 <div class="optio-div">
-                    <img src="images/Rectangle 17.png" alt="" class="option-icon">
+                    <img src="images/download-btn.svg" alt="" class="option-icon">
                     <p class="option-text">No Download</p>
                 </div>
                 <div class="optio-div">
-                    <img src="images/Rectangle 17.png" alt="" class="option-icon">
+                    <img src="images/people-btn.svg" alt="" class="option-icon">
                     <p class="option-text">1000s of supported online games</p>
                 </div>
                 
@@ -84,19 +164,67 @@
 
                 <div class="online-main-game">
                     <div class="game-online">
-                        <img src="images/Rectangle 4.png" alt="" class="game-poster">
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 4.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
+                        <!-- <img src="images/Rectangle 4.png" alt="" class="game-poster"> -->
                         <p class="game-info">No Download. No Installs. Play games Instantly on Gamer.</p>
                     </div>
                     <div class="game-online">
-                        <img src="images/Rectangle 5.png" alt="" class="game-poster">
+                        <!-- <img src="images/Rectangle 5.png" alt="" class="game-poster"> -->
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 5.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
                         <p class="game-info">Did you score? #unblockedgames #school</p>
                     </div>
                     <div class="game-online">
-                        <img src="images/Rectangle 6.png" alt="" class="game-poster">
+                        <!-- <img src="images/Rectangle 6.png" alt="" class="game-poster"> -->
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 6.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
                         <p class="game-info">Breaking game records like OG</p>
                     </div>
                     <div class="game-online">
-                        <img src="images/Rectangle 7.png" alt="" class="game-poster">
+                        <!-- <img src="images/Rectangle 7.png" alt="" class="game-poster"> -->
+                        <figure class="hover-img">
+                            <img src="images/Rectangle 7.png"/>
+                            <figcaption>
+                              <!-- <h3>Lorem <br/>Ipsum</h3> -->
+                              <img src="images/play.png" alt="">
+                              <p class="watch-now" style="color: #FF42A5; text-align: center;font-family: Work Sans; 
+                              font-style: normal;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: normal;">Watch Now</p>
+                            </figcaption>
+                          </figure>
                         <p class="game-info">Busted gaming on school laptop, but you are still lit.</p>
                     </div>
                 </div>
